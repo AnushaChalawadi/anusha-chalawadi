@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Monefy Android Automation Suite" verbose="1" parallel="false">
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    <test name="Monefy Android Tests">
+        <classes>
+            <class name="androidtests.AddExpenseTest"/>
+        </classes>
+    </test>
