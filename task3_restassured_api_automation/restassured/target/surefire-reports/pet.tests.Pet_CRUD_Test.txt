@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: pet.tests.Pet_CRUD_Test
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.562 s - in pet.tests.Pet_CRUD_Test
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.82 s - in pet.tests.Pet_CRUD_Test

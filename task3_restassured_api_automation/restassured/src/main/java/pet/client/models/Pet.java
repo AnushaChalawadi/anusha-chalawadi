@@ -3,7 +3,7 @@ package pet.client.models;
 import java.util.List;
 
 public class Pet {
- 
+
     private long id;
     private String name;
     private Category category;
@@ -11,9 +11,6 @@ public class Pet {
     private List<Tag> tags;
     private String status;
 
-    // // Mandatory for Jackson
-    // public Pet() {
-    // }
     // Constructor
     public Pet(long id, String name, Category category,
             List<String> photoUrls, List<Tag> tags, String status) {

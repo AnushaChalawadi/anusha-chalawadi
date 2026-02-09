@@ -3,11 +3,10 @@ package pet.base;
 import org.testng.annotations.BeforeClass;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
-import pet.Constants.Endpoints;
+import pet.constants.Endpoints;
 
 public class BaseClass {
 
