@@ -18,13 +18,16 @@ public class HomePage {
     private WebDriverWait wait;
 
     // Elements
-    @AndroidFindBy(id = "com.monefy.app.lite:id/expense_button")
+    @AndroidFindBy(id = "expense_button")
+        //"com.monefy.app.lite:id/expense_button")
     public WebElement addExpenseButton;
 
-    @AndroidFindBy(id = "com.monefy.app.lite:id/income_button")
+    @AndroidFindBy(id = "income_button")
+        //"com.monefy.app.lite:id/income_button")
     public WebElement addIncomeButton;
 
-    @AndroidFindBy(id = "com.monefy.app.lite:id/balance_amount")
+    @AndroidFindBy(id = "balance_amount")
+       // "com.monefy.app.lite:id/balance_amount")
     public WebElement balanceAmount;
 
     @AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc=\"Open navigation\"]")

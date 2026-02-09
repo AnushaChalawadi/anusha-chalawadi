@@ -25,6 +25,12 @@ public class AddExpensePage {
     @AndroidFindBy(id = "com.monefy.app.lite:id/textViewAmount")
     public WebElement amountField;
 
+    @AndroidFindBy(id = "delete")
+    public WebElement deleteExpensesBtn;
+
+    @AndroidFindBy(id = "buttonKeyboardClear")
+    public WebElement clearAmountField;
+
     // Constructor
     public AddExpensePage(AndroidDriver driver) {
         this.driver = driver;
@@ -38,21 +44,23 @@ public class AddExpensePage {
     }
 
     public boolean isNewExpenseHeaderDisplayed() {
-        try{
+        try {
             wait.until(ExpectedConditions.visibilityOf(newExpenseHeader));
             boolean isDisplayed = newExpenseHeader.isDisplayed();
             String headerText = newExpenseHeader.getText();
 
             System.out.println("Expense Header Text" + headerText);
             return isDisplayed;
-        }catch(Exception e){
+        } catch (Exception e) {
             System.out.println("New Expense header not found");
             return false;
         }
+    }
 
-        // boolean isDisplayed = newExpenseHeader.isDisplayed();
-        // System.out.println("New expense header displayed");
-        // return isDisplayed;
+    public void clearExpensesAmountField(int numDigits) {
+        for (int i = 0; i < numDigits; i = i + 1) {
+            clearAmountField.click();
+        }
     }
 
 }

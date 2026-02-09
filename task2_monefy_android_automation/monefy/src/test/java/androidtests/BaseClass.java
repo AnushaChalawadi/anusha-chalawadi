@@ -1,3 +1,32 @@
+// package androidtests;
+
+// import io.appium.java_client.android.AndroidDriver;
+// import org.testng.annotations.*;
+// import utils.*;
+
+// public class BaseTest {
+
+//     protected AndroidDriver driver;
+//     protected DriverManager driverManager;
+    
+//     @BeforeMethod
+//     public void setUp(){
+//         driverManager = new DriverManager();
+//         driver = driverManager.getDriver();
+//         System.out.println("Driver initialized successfully");
+
+//     }
+
+//     @AfterMethod
+//     public void tearDown()
+//     {
+//          if (driver != null) {
+//             driver.quit();
+//             System.out.println("Driver closed successfully");
+//         }
+//     }
+    
+// }
 package androidtests;
 
 import java.net.URL;
@@ -19,7 +48,7 @@ public class BaseClass {
         options.setPlatformName("Android");
         options.setDeviceName("monefy-android");
         
-        options.setApp("C:\\Users\\PC\\Documents\\N26_Home_Assignment\\monefy_android_automation\\monefy\\src\\test\\resources\\apps\\monefy.apk");
+        options.setApp("C:\\Users\\PC\\Documents\\N26_Home_Assignment\\task2_monefy_android_automation\\monefy\\src\\test\\resources\\apps\\monefy.apk");
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
 
         // AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);

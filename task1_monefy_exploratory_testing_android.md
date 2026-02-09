@@ -21,6 +21,8 @@ Focused on functionality, integration, usability, data-related risk in a persona
 - Different dates(day, week, month, all, interval, future dates)
 - Multiple categories
 
+**Expected Results:** Income and Expense transactions can be added, edited and delete. Should not be any data loss.
+
 ### Charter 2: Category Management
 **Mission:** Explore creating, modification and deleting categories to understand how changes affect existing expense data and reporting accuracy.
 
@@ -34,6 +36,8 @@ Focused on functionality, integration, usability, data-related risk in a persona
 **Test Data:**
 - Multiple custom category names
 - Multiple transactions per category
+
+**Expected Result:** Historical transactions preserve and clear message to users when category renaming.
 
 ### Charter 3: Account Management and Multi-Account Support
 **Mission:** Explore account creation, switching and transfer functionality
@@ -52,6 +56,8 @@ Focused on functionality, integration, usability, data-related risk in a persona
 - Transfer amounts of varying sizes
 - Account with different currencies
 
+**Expected Result:** Multi Account functionality should works as expected like Add, edit and delete, with out any data loss.
+
 ### Charter 4: Data Persistence
 **Mission:** Explore how reliably expense data is stored and retained across app restarts and navigation flows.
 
@@ -64,6 +70,8 @@ Focused on functionality, integration, usability, data-related risk in a persona
 **Test Data:**
 - Recently added expenses
 - Edited expenses
+
+**Expected Result:** All transactions made should remain consistent across app restarts or navigation flow.
 
 ### Charter 5: Data Visualization and Reporting
 **Mission:** Explore charts and reporting features
@@ -82,6 +90,8 @@ Focused on functionality, integration, usability, data-related risk in a persona
 - Transactions in multiple categories
 - Both income and expenses
 
+**Expected Result:** Charts should reflect correctly with accurate data.
+
 ### Charter 6: Settings and Configuration
 **Mission:** Explore app settings, preferences and configuration options to understand their impact on existing financial data and user interpretation of information.
 
@@ -97,6 +107,8 @@ Focused on functionality, integration, usability, data-related risk in a persona
 - Different currency formats
 - Existing data when changing settings
 
+**Expected Result:** Changes to settings(currency, language etc) should applied consistency without any UI Issues or corrupting
+
 ### Charter 7: Budget and Planning Features
 **Mission:** Explore budget setting and monitoring capabilities
 
@@ -111,6 +123,8 @@ Focused on functionality, integration, usability, data-related risk in a persona
 - Transactions that exceed budget
 - Transactions approaching budget limit
 - Multiple budget periods
+
+**Expected Result:** Budget planning functionality should be work as expected, without any data loss between carry over behavior
 
 ### Charter 8: Data Backup and Export
 **Mission:** Explore data backup, restore and export functionality
@@ -128,6 +142,8 @@ Focused on functionality, integration, usability, data-related risk in a persona
 - Multiple accounts and categories
 - Dropbox/Google drive accounts for testing sync
 
+**Expected Result:** Backup, restore and export opertaion preserve complete and accurate data across all accounts.
+
 ### Charter 9: User Interface and Usability
 **Mission:** Explore UI responsiveness, navigation and user experience
 
@@ -141,6 +157,8 @@ Focused on functionality, integration, usability, data-related risk in a persona
 
 **Test Data:**
 - Empty input fields
+
+**Expected Result:** The UI should be responsive and accessible to user with clear feedback for all actions.
 
 ### Charter 10: Data Integrity and Mathematical Calculations
 **Mission:** Explore mathematical accuracy and data consistency
@@ -157,6 +175,8 @@ Focused on functionality, integration, usability, data-related risk in a persona
 - Large transaction amounts
 - Complex transaction sequence
 
+**Expected Result:** Data should be mathematical correct, stable across edge cases invloving large values
+
 ### Charter 11: Performace and Responsiveness for Edge Cases
 **Mission:** Explore app responsiveness during normal usage and various conditions to identify any noticeable delays or performace issues
 
@@ -170,6 +190,8 @@ Focused on functionality, integration, usability, data-related risk in a persona
 **Test Data:**
 - Multiple accounts and categories
 - Offline environment
+
+**Expected Result:** The Performance of the application should remain stable and responsiveness for all edge cases
 
 ## Findings from Charters 
 
@@ -199,13 +221,26 @@ Focused on functionality, integration, usability, data-related risk in a persona
 
 ### Charter 4: Data Persistence
 ### Findings_01:
-- Unclear behavior when switching devices or reinstalling app
-
-### Charter 5: Data Visualization and Reporting
-### Findings_01:
+- Unclear behavior when switching devices or reinstalling app, No previous transaction
 
 ### Charter 6: Settings and Configuration
 ### Findings_01 : 
 - Changing currency settings was possible
 - The app did not clearly indicate whether existing expenses were recalculated or only displayed differently after the change, this behavior mislead the users
 
+### Charter 7: Budget and Planning Features
+### Findings_01 :
+- 
+- Selecting dark mode for application is PRO-Version
+- Use of dropbox, Google Drive is not in Free Version
+
+### Charter 8: Data Backup and Export
+- Data can be exported only in CSV format
+
+Bug:
+BUG_01_HomPage 
+The app features two separate "hamburger" menus that both lead to the same history page, creating unnecessary complexity.
+BUG_02_Budget and planning feature
+when user click on budget mode and add zero number should appear message "enter valid number" but appear message "budget ammount should be positive" while zero is not a negative number handling message (BUG)
+BUG_03_Settings and Configuration
+Changing language when change it from english to german not all text and pages displayed into german(BUG)

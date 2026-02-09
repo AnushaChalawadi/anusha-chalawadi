@@ -6,6 +6,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import io.appium.java_client.android.AndroidDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class CommonActions {
 
@@ -83,6 +84,12 @@ public class CommonActions {
     public void waitForTextToBeInHeader(WebElement element, String expectedText) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.textToBePresentInElement(element, expectedText));
+    }
+
+    public void doubleTap(WebElement element){
+        new Actions(driver)
+        .doubleClick(element)
+        .perform();
     }
 
 }

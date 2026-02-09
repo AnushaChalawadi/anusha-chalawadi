@@ -85,19 +85,6 @@ public class AccountSelectionPage {
         }
     }
 
-    // public boolean isAccountPresent(String accountName) {
-    // try {
-    // driver.findElement(AppiumBy.androidUIAutomator(
-    // "new UiScrollable(new UiSelector().scrollable(true))" + // scroll any
-    // scrollable container
-    // ".scrollIntoView(new UiSelector().text(\"" + accountName + "\"))"));
-    // return true;
-    // } catch (Exception e) {
-    // return false;
-
-    // }
-    // }
-
     public void selectAccount(String accountName) {
         driver.findElement(By.xpath(
                 "//android.widget.TextView[@resource-id='com.monefy.app.lite:id/title' and @text='" + accountName

@@ -12,7 +12,7 @@ import utils.CommonActions;
 import utils.AndroidTestData;
 
 @Listeners({ io.qameta.allure.testng.AllureTestNg.class })
-public class E2E_IncomeExpenseFlowTest extends BaseTest {
+public class E2E_IncomeExpenseFlowTest extends BaseClass {
 
     HomePage homePage;
     AddExpensePage addExpensePage;
@@ -28,7 +28,7 @@ public class E2E_IncomeExpenseFlowTest extends BaseTest {
     }
 
     @Test(priority = 1, description = "E2E Flow: Add Income and Expense Transactions")
-    public void testIncomeAndExpenseFlow() {
+    public void testIncomeFlow() {
 
         // Step 1: Verify that main page is displayed
         System.out.println("Step 1: Verify Main Page");
@@ -58,16 +58,13 @@ public class E2E_IncomeExpenseFlowTest extends BaseTest {
         Assert.assertEquals(balanceAfterIncome, initialBalanceValue + Double.parseDouble(AndroidTestData.INCOME_AMOUNT),
                 "Balance did not update correctly after adding income");
 
-        // commonActions.waitForVisibility(homePage.addExpenseButton, 10);
-        // double balanceAfterIncome = Double.parseDouble(homePage.getBalanceAmount());
-        // System.out.println("Balance after adding income: " + balanceAfterIncome);
-
-        //String expenseAmount = "500";
-        // double initialExpense = Double.parseDouble(initialBalance);
-        // System.out.println("Initial balance value: " + initialExpense);
-
+    }
+    @Test(dependsOnMethods = "testIncomeFlow")
+    public void testExpenseFlow(){
         // Step 5: Add Expense Transaction
         System.out.println(("Step 5: Add Expense Transaction"));
+        double balanceBeforeExpense = Double.parseDouble(homePage.getBalanceAmount());
+
         homePage.clickExpenseButton();
         addExpensePage.isNewExpenseHeaderDisplayed();
         commonActions.enterDigits(AndroidTestData.EXPENSE_AMOUNT);
@@ -82,8 +79,7 @@ public class E2E_IncomeExpenseFlowTest extends BaseTest {
         double balanceAfterExpense = Double.parseDouble(homePage.getBalanceAmount());
         System.out.println("Balance after adding expense: " + balanceAfterExpense);
 
-        double expectedBalance = initialBalanceValue + Double.parseDouble(AndroidTestData.INCOME_AMOUNT)
-                - Double.parseDouble(AndroidTestData.EXPENSE_AMOUNT);
+        double expectedBalance = balanceBeforeExpense - Double.parseDouble(AndroidTestData.EXPENSE_AMOUNT);
         Assert.assertEquals(balanceAfterExpense, expectedBalance,
                 "Balance did not update correctly after adding expense");       
     }

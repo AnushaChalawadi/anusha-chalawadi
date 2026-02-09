@@ -17,4 +17,7 @@ public class AndroidTestData {
     public static final String ACCOUNT_PAYMENT_CARD = "Payment card";
     public static final String ACCOUNT_ALL = "All Accounts";
 
+    // Edit Expense Amount
+    public static final String EDIT_EXPENSE = "50";
+
 }
