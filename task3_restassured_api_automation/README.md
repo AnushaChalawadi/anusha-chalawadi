@@ -51,7 +51,7 @@ The following CRUD operations are automated for PET domain
  - Data consistency
 
 ## Setup Instructions
-Prerequisites
+### Prerequisites
 
 Ensure the following are installed on your system:
  - Java - "21.0.7"
@@ -59,7 +59,7 @@ Ensure the following are installed on your system:
  - Vs code/Intellij
  - Git installed
  
-API Availability
+### API Availability
  - Public Swagger PetStore:
    https://petstore3.swagger.io/ 
  - Locally running
@@ -113,7 +113,7 @@ The report provides detailed logs for all requests and responses executed during
     - Centralized endpoints, BaseClass
     - I focused strictly on business logic in tests file and validation using TestNg.
 
-## Why This Teck Stack and Approach
+## Why This Teck Stack and Approach?
 1. RestAssured is a simple, readable and maintainable framework for API Testing.
 2. Java provides typing and with the TestNG flexible test execution and assertions.
 3. Using industry-standard Maven build and dependency management make more easies to download all required dependencies.
