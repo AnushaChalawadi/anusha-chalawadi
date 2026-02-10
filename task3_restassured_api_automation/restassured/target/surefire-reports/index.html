@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
                     </span>
                     <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="pet.tests.Pet_CRUD_Test" class="method navigator-link" hash-for-method="invalidPetID">invalidPetID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="pet.tests.Pet_CRUD_Test" class="method navigator-link" hash-for-method="testCreatPet">testCreatPet</a> <!-- method navigator-link -->
@@ -151,11 +156,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="invalidPetID">
+                  </a> <!-- invalidPetID -->
+                  <span class="method-name">invalidPetID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testCreatPet">
                   </a> <!-- testCreatPet -->
                   <span class="method-name">testCreatPet</span>
-                  <em>
-(Create a new pet and verify status code)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -170,8 +180,6 @@
                   <a name="testFindPetByStatus">
                   </a> <!-- testFindPetByStatus -->
                   <span class="method-name">testFindPetByStatus</span>
-                  <em>
-(Find Pet by Status)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -179,8 +187,6 @@
                   <a name="testGetPetById">
                   </a> <!-- testGetPetById -->
                   <span class="method-name">testGetPetById</span>
-                  <em>
-(Retrieve pet by ID and verify details)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -188,8 +194,6 @@
                   <a name="testUpdateExistingPet">
                   </a> <!-- testUpdateExistingPet -->
                   <span class="method-name">testUpdateExistingPet</span>
-                  <em>
-(Update existing pet)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -197,8 +201,6 @@
                   <a name="testUpdatePetWithFormData">
                   </a> <!-- testUpdatePetWithFormData -->
                   <span class="method-name">testUpdatePetWithFormData</span>
-                  <em>
-(Update pet details using Form Data)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -211,8 +213,8 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;pet.tests.Pet_CRUD_Test&quot;/&gt;
     &lt;/classes&gt;
@@ -254,36 +256,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testDeletePet')
 data.setCell(0, 2, 'pet.tests.Pet_CRUD_Test')
-data.setCell(0, 3, 2702);
+data.setCell(0, 3, 4931);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testUpdateExistingPet')
 data.setCell(1, 2, 'pet.tests.Pet_CRUD_Test')
-data.setCell(1, 3, 1041);
+data.setCell(1, 3, 1682);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testUpdatePetWithFormData')
+data.setCell(2, 1, 'testFindPetByStatus')
 data.setCell(2, 2, 'pet.tests.Pet_CRUD_Test')
-data.setCell(2, 3, 745);
+data.setCell(2, 3, 1120);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testGetPetById')
+data.setCell(3, 1, 'invalidPetID')
 data.setCell(3, 2, 'pet.tests.Pet_CRUD_Test')
-data.setCell(3, 3, 655);
+data.setCell(3, 3, 726);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testCreatPet')
+data.setCell(4, 1, 'testUpdatePetWithFormData')
 data.setCell(4, 2, 'pet.tests.Pet_CRUD_Test')
-data.setCell(4, 3, 653);
+data.setCell(4, 3, 676);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testFindPetByStatus')
+data.setCell(5, 1, 'testCreatPet')
 data.setCell(5, 2, 'pet.tests.Pet_CRUD_Test')
-data.setCell(5, 3, 642);
+data.setCell(5, 3, 666);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testGetPetById')
+data.setCell(6, 2, 'pet.tests.Pet_CRUD_Test')
+data.setCell(6, 3, 621);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -316,27 +322,31 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testDeletePet</span>
-                <span class="method-start">806 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testFindPetByStatus</span>
-                <span class="method-start">3512 ms</span>
+                <span class="method-start">1977 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testUpdateExistingPet</span>
-                <span class="method-start">4156 ms</span>
+                <span class="method-start">7112 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testUpdatePetWithFormData</span>
-                <span class="method-start">5198 ms</span>
+                <span class="method-start">8803 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidPetID</span>
+                <span class="method-start">9481 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCreatPet</span>
-                <span class="method-start">5944 ms</span>
+                <span class="method-start">10209 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFindPetByStatus</span>
+                <span class="method-start">10879 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetPetById</span>
-                <span class="method-start">6601 ms</span>
+                <span class="method-start">12001 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

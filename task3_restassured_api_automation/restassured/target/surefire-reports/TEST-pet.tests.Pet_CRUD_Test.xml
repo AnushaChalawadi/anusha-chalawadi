@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="pet.tests.Pet_CRUD_Test" time="7.82" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="pet.tests.Pet_CRUD_Test" time="15.181" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\PC\Documents\N26_Home_Assignment\task3_restassured_api_automation\restassured\target\test-classes;C:\Users\PC\Documents\N26_Home_Assignment\task3_restassured_api_automation\restassured\target\classes;C:\Users\PC\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\PC\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\PC\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\PC\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\PC\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\PC\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\PC\.m2\repository\io\rest-assured\rest-assured\6.0.0\rest-assured-6.0.0.jar;C:\Users\PC\.m2\repository\org\apache\groovy\groovy\5.0.3\groovy-5.0.3.jar;C:\Users\PC\.m2\repository\org\apache\groovy\groovy-xml\5.0.3\groovy-xml-5.0.3.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\PC\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\PC\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\PC\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\PC\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\PC\.m2\repository\io\rest-assured\json-path\6.0.0\json-path-6.0.0.jar;C:\Users\PC\.m2\repository\org\apache\groovy\groovy-json\5.0.3\groovy-json-5.0.3.jar;C:\Users\PC\.m2\repository\io\rest-assured\rest-assured-common\6.0.0\rest-assured-common-6.0.0.jar;C:\Users\PC\.m2\repository\io\rest-assured\xml-path\6.0.0\xml-path-6.0.0.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-lang3\3.19.0\commons-lang3-3.19.0.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.21.0\jackson-databind-2.21.0.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.21\jackson-annotations-2.21.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.21.0\jackson-core-2.21.0.jar;"/>
+    <property name="java.class.path" value="C:\Users\PC\Documents\N26_Home_Assignment\task3_restassured_api_automation\restassured\target\test-classes;C:\Users\PC\Documents\N26_Home_Assignment\task3_restassured_api_automation\restassured\target\classes;C:\Users\PC\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\PC\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\PC\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\PC\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\PC\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\PC\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\PC\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\PC\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\PC\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\PC\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\PC\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\PC\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\PC\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\PC\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\PC\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.0\jackson-databind-2.17.0.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.0\jackson-annotations-2.17.0.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.0\jackson-core-2.17.0.jar;C:\Users\PC\.m2\repository\net\bytebuddy\byte-buddy\1.14.9\byte-buddy-1.14.9.jar;C:\Users\PC\.m2\repository\io\qameta\allure\allure-testng\2.27.0\allure-testng-2.27.0.jar;C:\Users\PC\.m2\repository\io\qameta\allure\allure-java-commons\2.27.0\allure-java-commons-2.27.0.jar;C:\Users\PC\.m2\repository\io\qameta\allure\allure-model\2.27.0\allure-model-2.27.0.jar;C:\Users\PC\.m2\repository\io\qameta\allure\allure-test-filter\2.27.0\allure-test-filter-2.27.0.jar;C:\Users\PC\.m2\repository\io\qameta\allure\allure-rest-assured\2.27.0\allure-rest-assured-2.27.0.jar;C:\Users\PC\.m2\repository\io\qameta\allure\allure-attachments\2.27.0\allure-attachments-2.27.0.jar;C:\Users\PC\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\PC\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Users\PC\Documents\java downloads\jdk-21_windows-x64_bin\jdk-21.0.7\bin"/>
-    <property name="sun.java.command" value="C:\Users\PC\AppData\Local\Temp\surefire1500368960541381035\surefirebooter12862209024744820718.jar C:\Users\PC\AppData\Local\Temp\surefire1500368960541381035 2026-02-09T21-05-35_416-jvmRun1 surefire10131372314324270400tmp surefire_0437746258838452688tmp"/>
+    <property name="sun.java.command" value="C:\Users\PC\AppData\Local\Temp\surefire16323338667541071469\surefirebooter-20260210233258052_3.jar C:\Users\PC\AppData\Local\Temp\surefire16323338667541071469 2026-02-10T23-32-57_811-jvmRun1 surefire-20260210233258052_1tmp surefire_0-20260210233258052_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\PC\Documents\N26_Home_Assignment\task3_restassured_api_automation\restassured\target\test-classes;C:\Users\PC\Documents\N26_Home_Assignment\task3_restassured_api_automation\restassured\target\classes;C:\Users\PC\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\PC\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\PC\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\PC\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\PC\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\PC\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\PC\.m2\repository\io\rest-assured\rest-assured\6.0.0\rest-assured-6.0.0.jar;C:\Users\PC\.m2\repository\org\apache\groovy\groovy\5.0.3\groovy-5.0.3.jar;C:\Users\PC\.m2\repository\org\apache\groovy\groovy-xml\5.0.3\groovy-xml-5.0.3.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\PC\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\PC\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\PC\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\PC\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\PC\.m2\repository\io\rest-assured\json-path\6.0.0\json-path-6.0.0.jar;C:\Users\PC\.m2\repository\org\apache\groovy\groovy-json\5.0.3\groovy-json-5.0.3.jar;C:\Users\PC\.m2\repository\io\rest-assured\rest-assured-common\6.0.0\rest-assured-common-6.0.0.jar;C:\Users\PC\.m2\repository\io\rest-assured\xml-path\6.0.0\xml-path-6.0.0.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-lang3\3.19.0\commons-lang3-3.19.0.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.21.0\jackson-databind-2.21.0.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.21\jackson-annotations-2.21.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.21.0\jackson-core-2.21.0.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\PC\Documents\N26_Home_Assignment\task3_restassured_api_automation\restassured\target\test-classes;C:\Users\PC\Documents\N26_Home_Assignment\task3_restassured_api_automation\restassured\target\classes;C:\Users\PC\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\PC\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\PC\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\PC\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\PC\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\PC\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\PC\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\PC\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\PC\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\PC\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\PC\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\PC\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\PC\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\PC\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\PC\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.0\jackson-databind-2.17.0.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.0\jackson-annotations-2.17.0.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.0\jackson-core-2.17.0.jar;C:\Users\PC\.m2\repository\net\bytebuddy\byte-buddy\1.14.9\byte-buddy-1.14.9.jar;C:\Users\PC\.m2\repository\io\qameta\allure\allure-testng\2.27.0\allure-testng-2.27.0.jar;C:\Users\PC\.m2\repository\io\qameta\allure\allure-java-commons\2.27.0\allure-java-commons-2.27.0.jar;C:\Users\PC\.m2\repository\io\qameta\allure\allure-model\2.27.0\allure-model-2.27.0.jar;C:\Users\PC\.m2\repository\io\qameta\allure\allure-test-filter\2.27.0\allure-test-filter-2.27.0.jar;C:\Users\PC\.m2\repository\io\qameta\allure\allure-rest-assured\2.27.0\allure-rest-assured-2.27.0.jar;C:\Users\PC\.m2\repository\io\qameta\allure\allure-attachments\2.27.0\allure-attachments-2.27.0.jar;C:\Users\PC\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\PC\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\PC"/>
     <property name="user.language" value="en"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\PC\AppData\Local\Temp\surefire1500368960541381035\surefirebooter12862209024744820718.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\PC\AppData\Local\Temp\surefire16323338667541071469\surefirebooter-20260210233258052_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.7+8-LTS-245"/>
@@ -58,10 +58,309 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testDeletePet" classname="pet.tests.Pet_CRUD_Test" time="2.703"/>
-  <testcase name="testFindPetByStatus" classname="pet.tests.Pet_CRUD_Test" time="0.644"/>
-  <testcase name="testUpdateExistingPet" classname="pet.tests.Pet_CRUD_Test" time="1.067"/>
-  <testcase name="testUpdatePetWithFormData" classname="pet.tests.Pet_CRUD_Test" time="0.72"/>
-  <testcase name="testCreatPet" classname="pet.tests.Pet_CRUD_Test" time="0.653"/>
-  <testcase name="testGetPetById" classname="pet.tests.Pet_CRUD_Test" time="0.654"/>
+  <testcase name="testDeletePet" classname="pet.tests.Pet_CRUD_Test" time="5.126">
+    <system-out><![CDATA[Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/pet/201
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	petId=201
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 10 Feb 2026 18:03:07 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "201"
+}
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="testUpdateExistingPet" classname="pet.tests.Pet_CRUD_Test" time="1.691">
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	https://petstore.swagger.io/v2/pet
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 201,
+    "name": "Rom-update",
+    "category": {
+        "id": 10,
+        "name": "Dogs"
+    },
+    "photoUrls": [
+        "photo-url"
+    ],
+    "tags": [
+        {
+            "id": 15,
+            "name": "Very Friendly"
+        }
+    ],
+    "status": "Sold"
+}
+HTTP/1.1 200 OK
+Date: Tue, 10 Feb 2026 18:03:11 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 201,
+    "category": {
+        "id": 10,
+        "name": "Dogs"
+    },
+    "name": "Rom-update",
+    "photoUrls": [
+        "photo-url"
+    ],
+    "tags": [
+        {
+            "id": 15,
+            "name": "Very Friendly"
+        }
+    ],
+    "status": "Sold"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdatePetWithFormData" classname="pet.tests.Pet_CRUD_Test" time="0.677">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/pet/201
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	name=Rom-update
+				status=Sold
+Path params:	petId=201
+Headers:		Accept=application/json
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 10 Feb 2026 18:03:11 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "201"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="invalidPetID" classname="pet.tests.Pet_CRUD_Test" time="0.727">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/pet/0
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	petId=0
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Tue, 10 Feb 2026 18:03:12 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 1,
+    "type": "error",
+    "message": "Pet not found"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testCreatPet" classname="pet.tests.Pet_CRUD_Test" time="0.669">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/pet
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 201,
+    "name": "Rom",
+    "category": {
+        "id": 10,
+        "name": "Dogs"
+    },
+    "photoUrls": [
+        "photo-url"
+    ],
+    "tags": [
+        {
+            "id": 15,
+            "name": "Very Friendly"
+        }
+    ],
+    "status": "Available"
+}
+HTTP/1.1 200 OK
+Date: Tue, 10 Feb 2026 18:03:13 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 201,
+    "category": {
+        "id": 10,
+        "name": "Dogs"
+    },
+    "name": "Rom",
+    "photoUrls": [
+        "photo-url"
+    ],
+    "tags": [
+        {
+            "id": 15,
+            "name": "Very Friendly"
+        }
+    ],
+    "status": "Available"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testFindPetByStatus" classname="pet.tests.Pet_CRUD_Test" time="1.121">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/pet/findByStatus?status=Available
+Proxy:			<none>
+Request params:	<none>
+Query params:	status=Available
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 10 Feb 2026 18:03:14 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+[
+    {
+        "id": 201,
+        "category": {
+            "id": 10,
+            "name": "Dogs"
+        },
+        "name": "Rom",
+        "photoUrls": [
+            "photo-url"
+        ],
+        "tags": [
+            {
+                "id": 15,
+                "name": "Very Friendly"
+            }
+        ],
+        "status": "Available"
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="testGetPetById" classname="pet.tests.Pet_CRUD_Test" time="0.623">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/pet/201
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	petId=201
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 10 Feb 2026 18:03:14 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 201,
+    "category": {
+        "id": 10,
+        "name": "Dogs"
+    },
+    "name": "Rom",
+    "photoUrls": [
+        "photo-url"
+    ],
+    "tags": [
+        {
+            "id": 15,
+            "name": "Very Friendly"
+        }
+    ],
+    "status": "Available"
+}
+]]></system-out>
+  </testcase>
 </testsuite>

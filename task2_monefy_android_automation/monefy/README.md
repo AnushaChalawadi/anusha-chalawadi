@@ -113,6 +113,7 @@ mvn clean install
 ## Test Scenarios Covered and Execution Flow
 
 TestCase_01: E2E_CreateAndSelectAccountTest
+
 Steps:
 - Navigate to Accounts section
 - Click "Add New Account"
@@ -126,6 +127,8 @@ Steps:
 - Verifies Income should be able to create with New Account
 
 TestCase_02: E2E_ExpensesFlowTest
+
+Steps:
 - Verify main page is displayed
 - Click Expense button
 - Select category
@@ -134,6 +137,8 @@ TestCase_02: E2E_ExpensesFlowTest
 - Verifies the amount in each step and in transaction history
 
 TestCase_03: E2E_IncomeExpenseFlowTest
+
+Steps:
 - Adds income 
 - Adds expense 
 - Validates balance changes correctly after transactions

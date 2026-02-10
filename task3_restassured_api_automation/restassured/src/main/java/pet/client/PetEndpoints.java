@@ -58,4 +58,13 @@ public class PetEndpoints {
                 .when()
                 .delete(Endpoints.DELETE_PET);
     }
+
+        public static Response getInvalidPetID(RequestSpecification spec, long petId) {
+        return given()
+                .spec(spec)
+                .pathParam("petId", petId)
+                .when()
+                .get(Endpoints.GET_PET_BY_ID);
+    }
+
 }

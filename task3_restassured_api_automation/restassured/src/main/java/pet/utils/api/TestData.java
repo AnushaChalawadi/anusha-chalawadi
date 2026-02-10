@@ -23,5 +23,8 @@ public class TestData {
     public static final String PHOTO_URL = "photo-url";
     public static final List<String> PHOTO_URLS = Arrays.asList(PHOTO_URL);
 
+    public static final long INVALID_PET_ID = 0;
+    public static final String PET_NOT_FOUND = "Pet not found";
+
     
 }
