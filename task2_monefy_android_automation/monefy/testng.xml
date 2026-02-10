@@ -5,8 +5,10 @@
     <listeners>
         <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
     </listeners>
-    <test name="Monefy Android Tests">
+    <test name="Monefy Android E2E Tests">
         <classes>
+            <class name="androidtests.E2E_CreateAndSelectAccountTest"/>
+            <class name="androidtests.E2E_IncomeExpenseFlowTest"/>
             <class name="androidtests.E2E_ExpensesFlowTest"/>
         </classes>
     </test>

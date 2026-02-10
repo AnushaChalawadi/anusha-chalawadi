@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: androidtests.E2E_CreateAndSelectAccountTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 102.264 s <<< FAILURE! - in androidtests.E2E_CreateAndSelectAccountTest
-createIncomeForAccount(androidtests.E2E_CreateAndSelectAccountTest)  Time elapsed: 11.927 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 103.244 s <<< FAILURE! - in androidtests.E2E_CreateAndSelectAccountTest
+createIncomeForAccount(androidtests.E2E_CreateAndSelectAccountTest)  Time elapsed: 11.897 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: '4.40.0', revision: 'b3333f1'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [652a56ba-4f84-4818-918c-1313801b297d, findElement {using=id, value=com.monefy.app.lite:id/buttonKeyboard5}]
+Command: [dd0c41a4-63c3-45f8-96ed-6087a75103b3, findElement {using=id, value=com.monefy.app.lite:id/buttonKeyboard5}]
 Capabilities {appium:app: C:\Users\PC\Documents\N26_H..., appium:appActivity: com.monefy.activities.main...., appium:appPackage: com.monefy.app.lite, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\PC\Documents\N26_H..., automationName: UIAutomator2, deviceName: monefy-android, platformName: ANDROID}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 16, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 652a56ba-4f84-4818-918c-1313801b297d
+Session ID: dd0c41a4-63c3-45f8-96ed-6087a75103b3
 	at androidtests.E2E_CreateAndSelectAccountTest.createIncomeForAccount(E2E_CreateAndSelectAccountTest.java:83)
 
