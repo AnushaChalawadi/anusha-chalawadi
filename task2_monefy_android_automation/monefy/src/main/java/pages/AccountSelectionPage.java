@@ -33,7 +33,7 @@ public class AccountSelectionPage {
     @AndroidFindBy(xpath = "(//android.widget.ImageView[@resource-id=\"com.monefy.app.lite:id/imageView\"])[2]")
     public WebElement cashAccountType;
 
-    @AndroidFindBy(id = "com.monefy.app.lite:id/account_spinner")
+    @AndroidFindBy(id = "account_spinner")
     public WebElement allAccounts;
 
     // Constructor
@@ -53,7 +53,7 @@ public class AccountSelectionPage {
     public void addNewAccount(String accountName, String initialAmount) {
         wait.until(ExpectedConditions.visibilityOf(accountNameField)).sendKeys(accountName);
 
-        // Enter initial Amount
+        // Since initial amount is Zero, Clear and Entering initial amount
         if (initialAmount != null && !initialAmount.isEmpty()) {
             wait.until(ExpectedConditions.visibilityOf(initialAmountField)).clear();
             wait.until(ExpectedConditions.visibilityOf(initialAmountField)).sendKeys(initialAmount);
@@ -75,6 +75,7 @@ public class AccountSelectionPage {
         allAccounts.click();
     }
 
+    // Wait for all accounts list is displayed
     public boolean waitForAllAccountsList() {
         try {
             WebElement listView = wait.until(

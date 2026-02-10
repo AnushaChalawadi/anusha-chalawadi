@@ -7,7 +7,7 @@
         <methods>
           <include name="initializePages"/>
           <include name="addAccountAndSelect"/>
-          <include name="creatExpenseForAccount"/>
+          <include name="createIncomeForAccount"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

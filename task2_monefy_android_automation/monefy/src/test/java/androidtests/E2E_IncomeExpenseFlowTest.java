@@ -27,55 +27,64 @@ public class E2E_IncomeExpenseFlowTest extends BaseClass {
         commonActions = new CommonActions(driver);
     }
 
-    @Test(priority = 1, description = "E2E Flow: Add Income and Expense Transactions")
+    @Test(priority = 1, description = "E2E Flow: Add Income Amount")
     public void testIncomeFlow() {
 
-        // Step 1: Verify that main page is displayed
-        System.out.println("Step 1: Verify Main Page");
+        System.out.println("Verify Main Page is Displayed");
         Assert.assertTrue(homePage.isMainPageDisplayed(), "Main page is not displayed");
 
-        // Step 2: Capture initial balance
-        System.out.println("Step 2: Capture Initial Balance");
+        System.out.println("Capture Initial Balance");
         String initialBalance = homePage.getBalanceAmount();
         System.out.println("Initial balance: " + initialBalance);
 
-        // Step 3: Add Income Transaction
-        System.out.println(("Step 3: Add Income Transation"));
+        System.out.println("Clicking on Add Income Button");
         homePage.clickIncomeButton();
-        // String incomeAmount = "1000";
-        double initialBalanceValue = Double.parseDouble(initialBalance);
-        System.out.println("Initial balance value: " + initialBalanceValue);
+   
+        double initialBalanceAmount= Double.parseDouble(initialBalance);
+        System.out.println("Initial balance value: " + initialBalanceAmount);
+        
+        System.out.println("Entering digits for Income");
         commonActions.enterDigits(AndroidTestData.INCOME_AMOUNT);
         commonActions.clickOnChooseCategory();
+
+        System.out.println("Select Catefory from list");
         commonActions.selectCategory(AndroidTestData.INCOME_CATEGORY_SALARY);
 
-        // Step 4: Verify balance after income added
-        System.out.println("Step 4: Verify Balance After Income");
+        
         commonActions.waitForHomePage();
         commonActions.waitForVisibility(homePage.addExpenseButton, 10);
+
+        System.out.println("Verify Balance After Income added");
         double balanceAfterIncome = Double.parseDouble(homePage.getBalanceAmount());
-        System.out.println("Balance after adding income: " + balanceAfterIncome);
-        Assert.assertEquals(balanceAfterIncome, initialBalanceValue + Double.parseDouble(AndroidTestData.INCOME_AMOUNT),
+        System.out.println("Balance after adding income :" + balanceAfterIncome);
+        Assert.assertEquals(balanceAfterIncome, initialBalanceAmount + Double.parseDouble(AndroidTestData.INCOME_AMOUNT),
                 "Balance did not update correctly after adding income");
+        System.out.println("Income added Successfully");
 
     }
-    @Test(dependsOnMethods = "testIncomeFlow")
+    @Test(priority = 2, dependsOnMethods = "testIncomeFlow", description = "Add Expense Amount")
     public void testExpenseFlow(){
-        // Step 5: Add Expense Transaction
-        System.out.println(("Step 5: Add Expense Transaction"));
+
+        System.out.println("Home Page is Displayed");
+        commonActions.waitForHomePage();
+        commonActions.waitForVisibility(homePage.addExpenseButton, 10);
+   
         double balanceBeforeExpense = Double.parseDouble(homePage.getBalanceAmount());
+        System.out.println("Balance before expense added :" + balanceBeforeExpense);
 
         homePage.clickExpenseButton();
         addExpensePage.isNewExpenseHeaderDisplayed();
+
+        System.out.println("Entering digits for Expense");
         commonActions.enterDigits(AndroidTestData.EXPENSE_AMOUNT);
         commonActions.clickOnChooseCategory();
         commonActions.selectCategory(AndroidTestData.EXPENSE_CATEGORY_FOOD);
 
-        // Step 6: Verify Final Balance
-        System.out.println("Step 6: Verify Final Balance");
+        System.out.println("Navigating Back to Home Page");
         commonActions.waitForHomePage();
         commonActions.waitForVisibility(homePage.addExpenseButton, 10);
 
+        System.out.println("Verify Final Balance after adding expenses");
         double balanceAfterExpense = Double.parseDouble(homePage.getBalanceAmount());
         System.out.println("Balance after adding expense: " + balanceAfterExpense);
 

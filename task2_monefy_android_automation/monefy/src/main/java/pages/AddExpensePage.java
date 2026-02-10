@@ -22,7 +22,7 @@ public class AddExpensePage {
     @AndroidFindBy(id = "//android.widget.ImageButton[@content-desc='Navigate up']")
     public WebElement backButton;
 
-    @AndroidFindBy(id = "com.monefy.app.lite:id/textViewAmount")
+    @AndroidFindBy(id = "textViewAmount")
     public WebElement amountField;
 
     @AndroidFindBy(id = "delete")
@@ -30,6 +30,9 @@ public class AddExpensePage {
 
     @AndroidFindBy(id = "buttonKeyboardClear")
     public WebElement clearAmountField;
+
+    @AndroidFindBy(id = "delete")
+    public WebElement deleteExpense;
 
     // Constructor
     public AddExpensePage(AndroidDriver driver) {
@@ -61,6 +64,10 @@ public class AddExpensePage {
         for (int i = 0; i < numDigits; i = i + 1) {
             clearAmountField.click();
         }
+    }
+
+    public void clickDeleteExpense(){
+        deleteExpense.click();
     }
 
 }

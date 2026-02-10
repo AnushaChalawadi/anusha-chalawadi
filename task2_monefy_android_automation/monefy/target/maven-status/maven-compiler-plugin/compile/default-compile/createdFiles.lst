@@ -1,5 +1,4 @@
 utils\AndroidTestData.class
-utils\AppConstants.class
 pages\AccountSelectionPage.class
 utils\CommonActions.class
 pages\HomePage.class

@@ -86,10 +86,4 @@ public class CommonActions {
         wait.until(ExpectedConditions.textToBePresentInElement(element, expectedText));
     }
 
-    public void doubleTap(WebElement element){
-        new Actions(driver)
-        .doubleClick(element)
-        .perform();
-    }
-
 }

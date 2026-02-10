@@ -19,15 +19,12 @@ public class HomePage {
 
     // Elements
     @AndroidFindBy(id = "expense_button")
-        //"com.monefy.app.lite:id/expense_button")
     public WebElement addExpenseButton;
 
     @AndroidFindBy(id = "income_button")
-        //"com.monefy.app.lite:id/income_button")
     public WebElement addIncomeButton;
 
     @AndroidFindBy(id = "balance_amount")
-       // "com.monefy.app.lite:id/balance_amount")
     public WebElement balanceAmount;
 
     @AndroidFindBy(xpath = "//android.widget.ImageButton[@content-desc=\"Open navigation\"]")
@@ -63,10 +60,6 @@ public class HomePage {
         addIncomeButton.click();
     }
 
-    // public String getBalanceAmount(){
-    //     String balance = balanceAmount.getText().replace("$", )
-    // }
-
     public String getBalanceAmount() {
         String balanceText = balanceAmount.getText();
         // Remove non-numeric characters to extract the numeric value
@@ -78,10 +71,7 @@ public class HomePage {
         System.out.println("Clicked on Open Navigation");
     }
 
-    // public boolean isMainPageDisplayed() {
-    //     return addExpenseButton.isDisplayed() &&
-    //             addIncomeButton.isDisplayed() && balanceAmount.isDisplayed();
-    // }
+    // Verfiy is Main Page Displayed by verying Expense button is displayed
     public boolean isMainPageDisplayed() {
         try {
             wait.until(ExpectedConditions.visibilityOf(addExpenseButton));
@@ -92,7 +82,6 @@ public class HomePage {
             return false;
         }
     }
-
 
     public void clickOnOverFlowSettings() {
         openSettingsPanel.click();
@@ -109,7 +98,8 @@ public class HomePage {
         System.out.println("Clicked on Plus to add new account");
     }
 
-    public boolean isAccountNameDisplayed(String expectedAccountName) {
+    // Validate is AccounName displayed in Header
+    public boolean isAccNameDisplayedInHeader(String expectedAccountName) {
         try {
             WebElement accountHeader = driver.findElement(
                     By.xpath("//android.widget.TextView[@text='" + expectedAccountName + "']"));
@@ -125,10 +115,9 @@ public class HomePage {
                 By.xpath("//android.widget.TextView[@text='" + accountName + "']"));
     }
 
-    public void clickOnBalanceHistory()
-    {
+    public void clickOnBalanceHistory() {
         balanceAmount.click();
+        System.out.println("Clicked on Balance History");
     }
-
 
 }

@@ -9,21 +9,30 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">78,043</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">101,111</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">androidtests.E2E_CreateAndSelectAccountTest</td><td><a href="#m0">creatExpenseForAccount</a></td><td rowspan="1">1770675302177</td><td rowspan="1">13976</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">androidtests.E2E_CreateAndSelectAccountTest</td><td><a href="#m1">addAccountAndSelect</a></td><td rowspan="1">1770675272234</td><td rowspan="1">29911</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">androidtests.E2E_CreateAndSelectAccountTest</td><td><a href="#m0">createIncomeForAccount</a></td><td rowspan="1">1770722854581</td><td rowspan="1">11918</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">androidtests.E2E_CreateAndSelectAccountTest</td><td><a href="#m1">addAccountAndSelect</a></td><td rowspan="1">1770722815085</td><td rowspan="1">39467</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">androidtests.E2E_CreateAndSelectAccountTest#creatExpenseForAccount</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({AppiumBy.id: expense_button}).
-(tried for 10 seconds with 500 milliseconds interval)
+<h2>Surefire test</h2><h3 id="m0">androidtests.E2E_CreateAndSelectAccountTest#createIncomeForAccount</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
+Command: [652a56ba-4f84-4818-918c-1313801b297d, findElement {using=id, value=com.monefy.app.lite:id/buttonKeyboard5}]
 Capabilities {appium:app: C:\Users\PC\Documents\N26_H..., appium:appActivity: com.monefy.activities.main...., appium:appPackage: com.monefy.app.lite, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\PC\Documents\N26_H..., automationName: UIAutomator2, deviceName: monefy-android, platformName: ANDROID}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 16, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 9b5481ff-11e1-40b5-b6d8-63105206e562
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at pages.HomePage.clickExpenseButton(HomePage.java:56)
-	at androidtests.E2E_CreateAndSelectAccountTest.creatExpenseForAccount(E2E_CreateAndSelectAccountTest.java:65)
+Session ID: 652a56ba-4f84-4818-918c-1313801b297d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
+	at utils.CommonActions.enterDigits(CommonActions.java:26)
+	at androidtests.E2E_CreateAndSelectAccountTest.createIncomeForAccount(E2E_CreateAndSelectAccountTest.java:83)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">androidtests.E2E_CreateAndSelectAccountTest#addAccountAndSelect</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>

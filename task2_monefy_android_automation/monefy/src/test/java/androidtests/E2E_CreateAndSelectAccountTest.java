@@ -31,55 +31,68 @@ public class E2E_CreateAndSelectAccountTest extends BaseClass {
         // Step1: Verify that main page is displayed
         Assert.assertTrue(homePage.isMainPageDisplayed(), "Main page is not displayed");
 
+        System.out.println("Clicking on over flow settings from Corner");
         homePage.clickOnOverFlowSettings();
+        System.out.println("Selecting Account from Panel");
         homePage.clickOnAccountsPanel();
+        System.out.println("Clicking on + to add new account");
         homePage.clickPlusToAddAccount();
 
-        accountsPage.addNewAccount("demo", "1000");
+        accountsPage.addNewAccount(AndroidTestData.NEW_ACCOUNT_NAME, AndroidTestData.INITIAL_ACCOUNT_BALANCE);
         accountsPage.selectAccountType();
         accountsPage.clickOnAddButton();
 
+        System.out.println("Waiting for home pae to display");
         commonActions.waitForHomePage();
 
         homePage.clickOpenNavigation();
+        System.out.println("Select All Accounts");
         accountsPage.clickOnAllAccounts();
 
-        // wait for all Accounts list
         Assert.assertTrue(accountsPage.waitForAllAccountsList(), "All accounts list is not visible");
-        // Assert demo is present
-        accountsPage.selectAccount("demo");
+        // Assert New account is present
+        //accountsPage.selectAccount(AndroidTestData.NEW_ACCOUNT_NAME);
+        commonActions.selectAccountFromList(AndroidTestData.NEW_ACCOUNT_NAME);
         commonActions.waitForHomePage();
 
-        String expectedAccountName = "demo";
+        String expectedAccountName = AndroidTestData.NEW_ACCOUNT_NAME;
+        String accountBalance = homePage.getBalanceAmount();
+        System.out.println("Created account with Acmount" + accountBalance);
 
-        Assert.assertTrue(homePage.isAccountNameDisplayed(expectedAccountName),
+        Assert.assertTrue(homePage.isAccNameDisplayedInHeader(expectedAccountName),
                 "Account '" + expectedAccountName + "' is not displayed");
-        System.out.println("Account Validation is successfull");
+        System.out.println("Newly Created Account is Displayed Successfully");
     }
 
 
-    @Test(priority = 2, dependsOnMethods = "addAccountAndSelect")
-    public void creatExpenseForAccount() {
-        homePage.clickOnBalanceHistory();
-        System.out.println(("Step 5: Add Expense Transaction"));
-        homePage.clickExpenseButton();
-        addExpensePage.isNewExpenseHeaderDisplayed();
-        commonActions.enterDigits(AndroidTestData.EXPENSE_AMOUNT);
+    @Test(priority = 2, dependsOnMethods = "addAccountAndSelect", description = "Create Income for newly created Account")
+    public void createIncomeForAccount() {
+
+        System.out.println("Verify Main Page");
+        Assert.assertTrue(homePage.isMainPageDisplayed(), "Main page is not displayed");
+
+        System.out.println("Capture Initial Balance");
+        String initialBalance = homePage.getBalanceAmount();
+        System.out.println("Initial balance: " + initialBalance);
+
+        System.out.println((" Clicking on Add Income Button"));
+        homePage.clickIncomeButton();
+
+        double initialBalanceValue = Double.parseDouble(initialBalance);
+        System.out.println("Initial balance value: " + initialBalanceValue);
+        commonActions.enterDigits(AndroidTestData.INCOME_AMOUNT);
         commonActions.clickOnChooseCategory();
-        commonActions.selectCategory(AndroidTestData.EXPENSE_CATEGORY_FOOD);
+        commonActions.selectCategory(AndroidTestData.INCOME_CATEGORY_SALARY);
 
-        // Step 6: Verify Final Balance
-        System.out.println("Step 6: Verify Final Balance");
+        System.out.println("Verify Balance After Income added");
         commonActions.waitForHomePage();
+
         commonActions.waitForVisibility(homePage.addExpenseButton, 10);
+        double balanceAfterIncome = Double.parseDouble(homePage.getBalanceAmount());
+        System.out.println("Balance after adding income: " + balanceAfterIncome);
+        Assert.assertEquals(balanceAfterIncome, initialBalanceValue + Double.parseDouble(AndroidTestData.INCOME_AMOUNT),
+                "Balance did not update correctly after adding income");
+        System.out.println("Successfully added Income to the newly created Account");
 
-        double balanceAfterExpense = Double.parseDouble(homePage.getBalanceAmount());
-        System.out.println("Balance after adding expense: " + balanceAfterExpense);
-
-        // double expectedBalance = initialBalanceValue +
-        //         Double.parseDouble(AndroidTestData.INCOME_AMOUNT)
-        //         - Double.parseDouble(AndroidTestData.EXPENSE_AMOUNT);
-        // Assert.assertEquals(balanceAfterExpense, expectedBalance,
-        //         "Balance did not update correctly after adding expense");
     }
 }
