@@ -1,0 +1,6 @@
+# Allure results and reports
+allure-results/
+.allure/
+
+# Maven build artifacts
+target/
