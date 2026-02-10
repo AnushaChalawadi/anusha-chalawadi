@@ -1,8 +1,0 @@
-pet\client\models\Pet.class
-pet\constants\Endpoints.class
-pet\client\models\Tag.class
-pet\utils\api\TestData.class
-pet\constants\AppConstants.class
-pet\utils\api\PetRequestBuilder.class
-pet\client\PetEndpoints.class
-pet\client\models\Category.class
