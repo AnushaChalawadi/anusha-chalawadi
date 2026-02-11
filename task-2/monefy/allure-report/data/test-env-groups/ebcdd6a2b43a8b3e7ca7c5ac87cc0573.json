@@ -1,1 +1,1 @@
-{"id":"ebcdd6a2b43a8b3e7ca7c5ac87cc0573","fullName":"androidtests.E2E_IncomeExpenseFlowTest.testIncomeFlow","name":"E2E Flow: Add Income Amount","status":"failed","testResultsByEnv":{"default":"a99ffcc663e5aed3dc594b7cfee790d5"}}
+{"id":"ebcdd6a2b43a8b3e7ca7c5ac87cc0573","fullName":"androidtests.E2E_IncomeExpenseFlowTest.testIncomeFlow","name":"E2E Flow: Add Income Amount","status":"passed","testResultsByEnv":{"default":"be3b13f4ebaae84ccb11702fe1e1baca"}}

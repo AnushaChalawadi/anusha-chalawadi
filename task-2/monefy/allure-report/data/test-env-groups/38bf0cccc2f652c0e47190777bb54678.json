@@ -1,1 +1,1 @@
-{"id":"38bf0cccc2f652c0e47190777bb54678","fullName":"androidtests.E2E_CreateAndSelectAccountTest.addAccountAndSelect","name":"Add Account, Select and Verify Selected Account in Header","status":"failed","testResultsByEnv":{"default":"fa8a41f528a9322b7a27e3f261d9c518"}}
+{"id":"38bf0cccc2f652c0e47190777bb54678","fullName":"androidtests.E2E_CreateAndSelectAccountTest.addAccountAndSelect","name":"Add Account, Select and Verify Selected Account in Header","status":"passed","testResultsByEnv":{"default":"8735644abea850e039a7bc15d7aaa690"}}
