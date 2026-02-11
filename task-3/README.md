@@ -13,7 +13,7 @@ Test execution generates Allure reports for detailed test results, including req
 
 ## Project Structure
 ```
-  task3_restassured_api_automation
+task-3 
 └── restassured
     ├── .allure/               # Allure history and configuration
     ├── allure-report/         # Generated Allure HTML reports
