@@ -64,7 +64,7 @@ public class E2E_ExpenseFlowTest extends BaseClass {
     public void editExpenseFlow() {
 
         double balanceBeforeEdit = Double.parseDouble(homePage.getBalanceAmount());
-        System.out.println("Balance before editing the expense" + balanceBeforeEdit);
+        System.out.println("Balance before editing the expense " + balanceBeforeEdit);
 
         homePage.clickOnBalanceHistory();
 
