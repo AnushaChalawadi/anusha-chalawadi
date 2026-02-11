@@ -26,6 +26,8 @@
 ## Test Execution Reports
 Execution reports are attached in the repository and also reports screenshots under reports/ folder
 
+You can also preview the html live (thanks to github pages). 
+
 - Allure Reports:
   - [Task 2](https://anushachalawadi.github.io/anusha-chalawadi/task-2/allure-report/)
   - [Task 3](https://anushachalawadi.github.io/anusha-chalawadi/task-2/allure-report/)
