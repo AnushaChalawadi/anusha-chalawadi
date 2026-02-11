@@ -30,4 +30,4 @@ You can also preview the html live (thanks to github pages).
 
 - Allure Reports:
   - [Task 2](https://anushachalawadi.github.io/anusha-chalawadi/task-2/allure-report/)
-  - [Task 3](https://anushachalawadi.github.io/anusha-chalawadi/task-2/allure-report/)
+  - [Task 3](https://anushachalawadi.github.io/anusha-chalawadi/task-3/allure-report/)
