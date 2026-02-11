@@ -59,7 +59,7 @@ public class E2E_CreateAndSelectAccountTest extends BaseClass {
 
         String expectedAccountName = AndroidTestData.NEW_ACCOUNT_NAME;
         String accountBalance = homePage.getBalanceAmount();
-        System.out.println("Created account with Acmount" + accountBalance);
+        System.out.println("Created account with Amount " + accountBalance);
 
         Assert.assertTrue(homePage.isAccNameDisplayedInHeader(expectedAccountName),
                 "Account '" + expectedAccountName + "' is not displayed");
