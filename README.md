@@ -27,9 +27,9 @@
 Execution reports are attached in the repository and also reports screenshots under reports/ folder
 
 - Allure Reports:
-  a. /task-2/monefy/allure-report/index.html
-  b. /task-3/restassured/allure-report/index.html
+  - a. /task-2/monefy/allure-report/index.html
+  - b. /task-3/restassured/allure-report/index.html
 
 - TestNG Reports:
-  a. /task-2/monefy/target/surefire-reports/index.html
-  b. /task-3/restassured/target/surefire-reports/index.html
+  - a. /task-2/monefy/target/surefire-reports/index.html
+  - b. /task-3/restassured/target/surefire-reports/index.html
